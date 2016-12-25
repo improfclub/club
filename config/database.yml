@@ -1,20 +1,19 @@
 default: &default
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   pool: 5
   host: localhost
-  username: root
+  username: pguser
   password: root
-  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
-  database: successclub
+  database: successclub_pg
 
 test:
   <<: *default
-  database: succsessclub_test
-  username: root
+  database: succsessclub_pg
+  username: pguser
 
 production:
   <<: *default

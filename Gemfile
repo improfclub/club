@@ -37,8 +37,7 @@ gem 'sequel'
 gem 'puma'
 
 # db
-gem 'mysql2', '>= 0.3.13', '< 0.5'
-gem 'mysql'
+gem 'pg'
 
 # Omniauth
 gem 'omniauth'

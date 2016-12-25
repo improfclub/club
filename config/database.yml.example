@@ -1,11 +1,10 @@
 default: &default
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   pool: 5
   host: localhost
-  username: 'name'
-  password: 'password'
-  socket: /var/run/mysqld/mysqld.sock
+  username: ENV['PG_USERNAME']
+  password: ENV['PG_PASSWORD']
 
 development:
   <<: *default
