@@ -9,7 +9,6 @@ capybara-*.html
 **.orig
 rerun.txt
 
-config/database.yml
 config/local_env.yml
 config/nginx.conf
 
@@ -35,3 +34,5 @@ app/spec
 .keep
 .bowerrc
 node_modules
+Gemfile.lock
+public/uploads/
