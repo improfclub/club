@@ -36,9 +36,6 @@ gem 'haml'
 gem 'sequel'
 gem 'puma'
 
-# db
-gem 'pg'
-
 # Omniauth
 gem 'omniauth'
 gem 'omniauth-facebook'
@@ -46,9 +43,6 @@ gem 'omniauth-vkontakte'
 
 # Liqpay plugin
 gem 'liqpay', github: 'liqpay/sdk-ruby'
-
-# Use Unicorn as the app server
-gem 'unicorn'
 
 group :development, :test do
   gem 'byebug', '9.0.5'
@@ -59,4 +53,9 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring', '1.7.1'
+end
+
+group :production do
+  gem 'pg'
+  gem 'unicorn'
 end
