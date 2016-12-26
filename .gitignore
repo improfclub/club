@@ -34,5 +34,4 @@ app/spec
 .keep
 .bowerrc
 node_modules
-Gemfile.lock
 public/uploads/
